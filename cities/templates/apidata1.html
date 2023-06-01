@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <h1><a href="/">Home</a></h1>
+    <h1><a href="/cities">Cities</a></h1>
+    <h1><a href="/users">Users</a></h1>
+
+<body>
+    <h1>Data Details </h1>
+<ul>
+    <li>
+        {{ allUsers.page }} page
+    </li>
+    <li>
+        {{ allUsers.per_page }} per_page
+    </li>
+    <li>
+        {{ allUsers.total }} total 
+    </li>
+    <li>
+        {{ allUsers.total_pages }} total_pages
+    </li>
+</ul>
+
+<h1>New Users</h1>
+<ul>
+    {% for x in allUsers.data %}
+    <li>{{ x.first_name }} with {{ x.email }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

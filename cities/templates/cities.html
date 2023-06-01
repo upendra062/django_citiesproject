@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1>Cities Home Page</h1>
+    <ul>
+        {% for i in data %}
+        <a href="/cities/details/{{ i.id }}"><li>{{ i.firstname }} {{ i.lastname }}</li></a>
+        {% endfor %}
+    </ul>
+    <h1>Access Last Page</h1>
+    <ul>
+        {% for v in data %}
+        <a href="/cities/last/{{ v.id }}"><li>{{ v.lastname }}</li></a>
+        {% endfor %}
+    </ul>
+{% endblock %}

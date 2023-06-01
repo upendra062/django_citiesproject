@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <h1><a href="/">HomePage</a></h1>
+    <h1><a href="/cities">Cities</a></h1>
+    <h1><a href="/users">Users</a></h1>
+    <h1><a href="/users1">New Users</a></h1>
+    <h1><a href="/template">Template</a></h1>
+    <h1><a href="/template2">Template2/</a></h1>
+    <h1><a href="/cities/newdynamic">cities/newdynamic</a></h1>
+    {% block content %}{% endblock %}
+</body>
+</html>
+
+
+

@@ -1,0 +1,9 @@
+{% extends 'master.html' %}
+{% block title %} Detail Page {% endblock %}
+{% block content %}
+<h1>Cities Details</h1>
+    <h3>{{ data.firstname }} {{ data.lastname }}</h3>
+    <h3>{{ data.mobile }}</h3>
+    <h3>{{ data.birth_date }}</h3>
+    <h2><a href="/cities">Go to Cities</a></h2>
+{% endblock %}
